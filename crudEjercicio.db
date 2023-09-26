@@ -1,0 +1,125 @@
+db.Usuarios.insertMany([
+    {
+        "Nombre": "Karol Tatiana Angarita",
+        "Edad": "19",
+        "Correo": "tatianaangarita150@gmail.com",
+        "Telefono": "3227401924"
+    },
+    {
+        "Nombre": "Juan Camilo Castro",
+        "Edad": "20",
+        "Correo": "juancamilo@gmail.com",
+        "Telefono": "3202548647"
+    },
+    {
+        "Nombre": "Valentina Lombana Castro",
+        "Edad": "17",
+        "Correo": "valentina21@gmail.com",
+        "Telefono": "3125488961"
+    },
+    {
+        "Nombre": "Madelinne Pantevis Almario",
+        "Edad": "30",
+        "Correo": "milypily21@gmail.com",
+        "Telefono": "3134584472"
+    },
+    {
+        "Nombre": "Andres Rivera",
+        "Edad": "26",
+        "Correo": "andres53@gmail.com",
+        "Telefono": "3154862115"
+    }
+])
+
+
+
+db.Materias.insertMany([
+    {
+        "Nombre de la materia": "Programacion",
+        "Duracion": "6 meses"
+    },
+    {
+        "Nombre de la materia": "Fisica",
+        "Duracion": "5 meses"
+    },
+    {
+        "Nombre de la materia": "Emprendimiento",
+        "Duracion": "4 meses"
+    },
+    {
+        "Nombre de la materia": "Base de datos",
+        "Duracion": "6 meses"
+    },
+    {
+        "Nombre de la materia": "Proyecto",
+        "Duracion": "4 meses"
+    }
+])
+
+
+
+db.Notas.insertMany([
+    {
+        "Materia": "Proyecto",
+        "Nota": "4.0",
+        "Instructor": "ROcio de Carmen"
+    },
+    {
+        "Materia": "Fisica",
+        "Nota": "3.5",
+        "Instructor": "Marly Johana"
+    },
+    {
+        "Materia": "Programacion",
+        "Nota": "4.0",
+        "Instructor": "Hector Dvid Toledo"
+    },
+    {
+        "Materia": "Ingles",
+        "Nota": "3.0",
+        "Instructor": "Andres Felipe"
+    },
+    {
+        "Materia": "Base de datos",
+        "Nota": "3.5",
+        "Instructor": "Jimmy Alexander Lombana"
+    }
+])
+
+db.Notas.deleteOne(
+    {
+        "Nota":3.0
+    }
+)
+
+
+
+db.Usuarios.updateOne(
+    {
+        "Edad":"17"
+    },
+    {
+        $set:
+       {
+        "Edad":"24"
+       } 
+    }
+    
+    )
+
+
+db.Usuarios.updateOne(
+    {
+        "Telefono":"3134584472"
+    },
+    {
+        $set:
+       {
+        "Telefono":"3148562254"
+       } 
+    }
+    
+    )
+
+
+

@@ -1,0 +1,5 @@
+db.Usuarios.insertOne({
+    "Nombre": "Karol Tatiana Angarita",
+    "Email": "tatianaangarita150@gmail.com",
+    "Edad": 19
+})

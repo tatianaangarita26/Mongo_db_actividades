@@ -1,0 +1,192 @@
+db.usuario.insertMany([
+    {
+        "Nombre": "Andrea Collazos",
+        "Edad": 22,
+        "Telefono": 3225683434,
+        "Email": "collarandrea21@gmail.com"
+    },
+    {
+        "Nombre": "Yessica Melina",
+        "Edad": 26,
+        "Telefono": 3215436788,
+        "Email": "yessicamelina@gmail.com"
+    },
+    {
+        "Nombre": "Marcos Molina",
+        "Edad": 8,
+        "Telefono": 3235995584,
+        "Email": "marcosmolina@gmail.com"
+    },
+    {
+        "Nombre": "Maria Embus",
+        "Edad": 17,
+        "Telefono": 3125763358,
+        "Email": "embusmaria36@gmail.com"
+    },
+    {
+        "Nombre": " Daniel Florez",
+        "Edad": 19,
+        "Telefono": 3115322567,
+        "Email": "danielflorez90@gmail.com"
+    },
+    {
+        "Nombre": "Danna Martinez",
+        "Edad": 66,
+        "Telefono": 3028934490,
+        "Email": "dannamartinez@gmail.com"
+    },
+    {
+        "Nombre": "Yeferson Leal",
+        "Edad": 14,
+        "Telefono": 3224679985,
+        "Email": "yefersonleal@gmail.com"
+    }
+])
+
+
+
+db.tiquete.insertMany([
+    {
+        "clase": "Alta",
+        "asiento": "asiento1",
+        "valor": "$ 200.000"
+    },
+    {
+        "clase": "Media",
+        "asiento": "asiento5",
+        "valor": "$150.000"
+    },
+    {
+        "clase": "Media",
+        "asiento": "asiento9",
+        "valor": "$160.000"
+    },
+    {
+        "clase": "Baja",
+        "asiento": "asiento16",
+        "valor": "$100.000"
+    },
+    {
+        "clase": "Alta",
+        "asiento": "asiento35",
+        "valor": "$220.000"
+    },
+    {
+        "clase": "Media",
+        "asiento": "asiento3",
+        "valor": "$150.000"
+    },
+    {
+        "clase": "Media",
+        "asiento": "asiento53",
+        "valor": "$140.000"
+    }
+])
+
+
+
+db.aeropuerto.insertMany([
+    {
+        "Nombre": "El Dorado",
+        "Direccion": "Av El Dorado 103-9",
+        "Telefono": 2662000
+    },
+    {
+        "Nombre": "El Dorado",
+        "Direccion": "Av El Dorado 103-9",
+        "Telefono": 2662000
+    },
+    {
+        "Nombre": "Palonegro",
+        "Direccion": "Lebrija Santander",
+        "Telefono": 6910140
+    },
+    {
+        "Nombre": "Palonegro",
+        "Direccion": "Lebrija Santander",
+        "Telefono": 6910140
+    },
+    {
+        "Nombre": "El Dorado",
+        "Direccion": "Av El Dorado 103-9",
+        "Telefono": 2662000
+    },
+    {
+        "Nombre": "El Dorado",
+        "Direccion": "Av El Dorado 103-9",
+        "Telefono": 2662000
+    },
+    {
+        "Nombre": "El Dorado",
+        "Direccion": "Av El Dorado 103-9",
+        "Telefono": 2662000
+    }
+])
+
+
+
+
+db.vuelo.insertMany([
+    {
+        "Compañia": "Avianca"
+    },
+    {
+        "Compañia": "Avianca"
+    },
+    {
+        "Compañia": "Wingo"
+    },
+    {
+        "Compañia": "LATAM"
+    },
+    {
+        "Compañia": "Wingo"
+    },
+    {
+        "Compañia": "LATAM"
+    },
+    {
+        "Compañia": "Avianca"
+    }
+])
+
+
+
+
+db.avion.insertMany([
+    {
+        "modelo_avion": "Airbus A320",
+        "destino": "Cali",
+        "hora": "12:30 PM"
+    },
+    {
+        "modelo_avion": "Airbus A320",
+        "destino": "Bogota",
+        "hora": "1:00 AM"
+    },
+    {
+        "modelo_avion": "Boeing 737-700",
+        "destino": "Medellin",
+        "hora": "7:30 PM"
+    },
+    {
+        "modelo_avion": "Boeing 767-300F",
+        "destino": "Cali",
+        "hora": "12:30 PM"
+    },
+    {
+        "modelo_avion": "Boeing 737-700",
+        "destino": "Medellin",
+        "hora": "8:50 AM"
+    },
+    {
+        "modelo_avion": "Boeing 767-300F",
+        "destino": "Medellin",
+        "hora": "12:30 AM"
+    },
+    {
+        "modelo_avion": "Airbus A320",
+        "destino": "Medellin",
+        "hora": "7:30 PM"
+    }
+])
