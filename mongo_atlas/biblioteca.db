@@ -1,0 +1,201 @@
+use biblioteca
+
+db.createCollection("libros")
+db.createCollection("autores")
+db.createCollection("categorias")
+db.createCollection("prestamos")
+
+db.libros.insertOne({
+    "titulo": "El Gran Gatsby",
+    "autor": "F. Scott Fitzgerald",
+    "categoria": "Ficción",
+    "ejemplares_disponibles": 5,
+    "ejemplares_totales": 10
+})
+
+db.libros.insertOne({
+    "titulo": "El principito",
+    "autor": "Antoine de Saint-Exupéry",
+    "categoria": " Literatura infantil",
+    "ejemplares_disponibles": 9,
+    "ejemplares_totales": 15
+})
+
+db.libros.insertOne({
+    "titulo": "Tierra de hombres",
+    "autor": "Antoine de Saint-Exupéry",
+    "categoria": "Biografía",
+    "ejemplares_disponibles": 8,
+    "ejemplares_totales": 14
+})
+
+db.libros.insertOne({
+    "titulo": "Cien años de soledad",
+    "autor": "Gabriel García Márquez",
+    "categoria": "Novela",
+    "ejemplares_disponibles": 4,
+    "ejemplares_totales": 20
+})
+
+db.libros.insertOne({
+    "titulo": "El alquimista",
+    "autor": "Paulo Coelho",
+    "categoria": "Novela",
+    "ejemplares_disponibles": 9,
+    "ejemplares_totales": 10
+})
+
+db.libros.insertOne({
+    "titulo": "El viejo y el mar",
+    "autor": "Ernest Hemingway",
+    "categoria": "Novela",
+    "ejemplares_disponibles": 5,
+    "ejemplares_totales": 15
+})
+
+db.libros.insertOne({
+    "titulo": "Rebelión en la granja",
+    "autor": "George Orwell",
+    "categoria": "Ficción distópica",
+    "ejemplares_disponibles": 6,
+    "ejemplares_totales": 30
+})
+
+
+
+db.autores.insertOne({
+    "nombre": "F. Scott Fitzgerald",
+    "nacimiento": "24 de septiembre de 1896",
+    "nacionalidad": "Estadounidense",
+    "obras_destacadas": ["El Gran Gatsby", "Tender Is the Night"]
+})
+
+db.autores.insertOne({
+    "nombre": "Antoine de Saint-Exupéry",
+    "nacimiento": "29 de junio de 1900",
+    "nacionalidad": "Francés",
+    "obras_destacadas": ["El principito, Vuelo nocturno"]
+})
+
+db.autores.insertOne({
+    "nombre": "Antoine de Saint-Exupéry",
+    "nacimiento": "29 de junio de 1900",
+    "nacionalidad": "Francés",
+    "obras_destacadas": ["El principito, Vuelo nocturno"]
+})
+
+db.autores.insertOne({
+    "nombre": "Gabriel García Márquez",
+    "nacimiento": "6 de marzo de 1927",
+    "nacionalidad": "Colombiano",
+    "obras_destacadas": ["Crónica de una muerte anunciada, Doce cuentos peregrinos"]
+})
+
+db.autores.insertOne({
+    "nombre": "Paulo Coelho",
+    "nacimiento": "24 de agosto de 1947",
+    "nacionalidad": "Brasileño ",
+    "obras_destacadas": ["El alquimista, El Peregrino"]
+})
+
+db.autores.insertOne({
+    "nombre": "Ernest Hemingway",
+    "nacimiento": "21 de julio de 1899",
+    "nacionalidad": "Estadounidense ",
+    "obras_destacadas": ["El viejo y el mar, Adiós a las armas"]
+})
+
+db.autores.insertOne({
+    "nombre": "George Orwell",
+    "nacimiento": "25 de junio de 1903",
+    "nacionalidad": "Británico",
+    "obras_destacadas": ["1984, Rebelión en la granja"]
+})
+
+
+
+db.categorias.insertOne({
+    "nombre": "Ficción",
+    "descripcion": "Obras literarias de ficción"
+})
+
+db.categorias.insertOne({
+    "nombre": "Literatura infantil",
+    "descripcion": "El principito es una novela corta"
+})
+
+db.categorias.insertOne({
+    "nombre": "Biografía",
+    "descripcion": "Antoine de Saint Exupéry evoca una serie de acontecimientos de su vida"
+})
+
+db.categorias.insertOne({
+    "nombre": "Novela",
+    "descripcion": "Es considerada una obra maestra de la literatura hispanoamericana y universal,"
+})
+
+db.categorias.insertOne({
+    "nombre": "Novela",
+    "descripcion": "se basa en encontrar el destino de cada uno"
+})
+
+db.categorias.insertOne({
+    "nombre": "Novela",
+    "descripcion": "Santiago es un pescador de avanzada edad, que lleva 84 días sin conseguir pescar nada"
+})
+
+db.categorias.insertOne({
+    "nombre": "Ficción distópica",
+    "descripcion": "es una fábula mordaz sobre cómo el régimen soviético de Iósif Stalin"
+})
+
+
+
+db.prestamos.insertOne({
+    "usuario": "juan perez",
+    "fecha_prestamo": ("2023-10-05"),
+    "fecha_devolucion": ("2023-10-20"),
+    "devuelto": "No"
+})
+
+db.prestamos.insertOne({
+    "usuario": "Daniel Leal",
+    "fecha_prestamo": ("2023-04-15"),
+    "fecha_devolucion": ("2023-05-20"),
+    "devuelto": "Si"
+})
+
+db.prestamos.insertOne({
+    "usuario": "Camila Hernandez",
+    "fecha_prestamo": ("2023-08-05"),
+    "fecha_devolucion": ("2023-08-30"),
+    "devuelto": "Si"
+})
+
+db.prestamos.insertOne({
+    "usuario": "Cristian Lopez",
+    "fecha_prestamo": ("2023-10-25"),
+    "fecha_devolucion": ("2023-12-20"),
+    "devuelto": "No"
+})
+
+db.prestamos.insertOne({
+    "usuario": "Maria Embus",
+    "fecha_prestamo": ("2023-11-30"),
+    "fecha_devolucion": ("2023-12-20"),
+    "devuelto": "Si"
+})
+
+db.prestamos.insertOne({
+    "usuario": "Manuel Ortega",
+    "fecha_prestamo": ("2023-04-19"),
+    "fecha_devolucion": ("2023-06-01"),
+    "devuelto": "No"
+})
+
+db.prestamos.insertOne({
+    "usuario": "Yuliet Rojas",
+    "fecha_prestamo": ("2023-12-17"),
+    "fecha_devolucion": ("2024-02-09"),
+    "devuelto": "Si"
+})

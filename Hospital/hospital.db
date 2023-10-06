@@ -1,0 +1,777 @@
+use hospital
+
+db.createCollection("laboradores")
+db.createCollection("citas")
+db.createCollection("medicamentos")
+db.createCollection("autorizaciones")
+
+
+db.laboradores.insertOne({ 
+    "nombre": "Juan Pérez", 
+    "documento": "12345678", 
+    "especialidad": "Médico General",
+    "fecha_disponibilidad": "01/10/2023",
+    "hora_disponibilidad": "6:00 AM- 9:00 AM"
+})
+
+db.laboradores.insertOne({ 
+    "nombre": "María García", 
+    "documento": "98765432", 
+    "especialidad": "Enfermera", 
+    "fecha_disponibilidad": "02/10/2023",
+    "hora_disponibilidad": "6:00 AM- 9:00 AM"
+})
+
+db.laboradores.insertOne({ 
+    "nombre": "Carlos Rodríguez", 
+    "documento": "56473829", 
+    "especialidad": "Odontólogo",
+    "fecha_disponibilidad": "03/10/2023",
+    "hora_disponibilidad": "6:00 AM- 9:00 AM"
+})
+
+db.laboradores.insertOne({ 
+    "nombre": "Ana López", 
+    "documento": "87654321", 
+    "especialidad": "Psicóloga",
+    "fecha_disponibilidad": "04/10/2023",
+    "hora_disponibilidad": "6:00 AM- 9:00 AM"
+})
+
+db.laboradores.insertOne({ 
+    "nombre": "Luis Martínez", 
+    "documento": "23456789", 
+    "especialidad": "Fisioterapeuta", 
+    "fecha_disponibilidad": "05/10/2023",
+    "hora_disponibilidad": "6:00 AM- 9:00 AM"
+})
+
+db.laboradores.insertOne({ 
+    "nombre": "Laura Sánchez", 
+    "documento": "67483920", 
+    "especialidad": "Nutricionista", 
+    "fecha_disponibilidad": "06/10/2023",
+    "hora_disponibilidad": "9:00 AM- 11:00 AM"
+})
+
+db.laboradores.insertOne({ 
+    "nombre": "Pedro Gómez", 
+    "documento": "19384756", 
+    "especialidad": "Cirujano", 
+    "fecha_disponibilidad": "07/10/2023",
+    "hora_disponibilidad": "9:00 AM- 11:00 AM"
+})
+
+db.laboradores.insertOne({ 
+    "nombre": "Sofía Torres", 
+    "documento": "28374659", 
+    "especialidad": "Cardiólogo", 
+    "fecha_disponibilidad": "08/10/2023",
+    "hora_disponibilidad": "9:00 AM- 11:00 AM"
+})
+
+db.laboradores.insertOne({ 
+    "nombre": "Jorge Vargas", 
+    "documento": "83920173", 
+    "especialidad": "Ginecólogo", 
+    "fecha_disponibilidad": "09/10/2023",
+    "hora_disponibilidad": "9:00 AM- 11:00 AM"
+})
+
+db.laboradores.insertOne({ 
+    "nombre": "Silvia Díaz", 
+    "documento": "73849562", 
+    "especialidad": "Dermatólogo", 
+    "fecha_disponibilidad": "10/10/2023",
+    "hora_disponibilidad": "9:00 AM- 11:00 AM"
+})
+
+db.laboradores.insertOne({ 
+    "nombre": "Eduardo Ramírez", 
+    "documento": "64537281", 
+    "especialidad": "Oftalmólogo", 
+    "fecha_disponibilidad": "11/10/2023",
+    "hora_disponibilidad": "11:00 AM- 01:00 PM"
+})
+
+db.laboradores.insertOne({ 
+    "nombre": "Carmen Mendoza", 
+    "documento": "12456738", 
+    "especialidad": "Psiquiatra", 
+    "fecha_disponibilidad": "12/10/2023",
+    "hora_disponibilidad": "11:00 AM- 01:00 PM"
+})
+
+db.laboradores.insertOne({ 
+    "nombre": "Héctor Castillo", 
+    "documento": "98567432", 
+    "especialidad": "Ortopedista",
+    "fecha_disponibilidad": "13/10/2023",
+    "hora_disponibilidad": "11:00 AM- 01:00 PM"
+})
+
+db.laboradores.insertOne({ 
+    "nombre": "Patricia Fernández", 
+    "documento": "56789342",
+    "especialidad": "Urología", 
+    "fecha_disponibilidad": "14/10/2023",
+    "hora_disponibilidad": "11:00 AM- 01:00 PM"
+})
+
+db.laboradores.insertOne({ 
+    "nombre": "Ricardo Silva", 
+    "documento": "73482910", 
+    "especialidad": "Pediatra", 
+    "fecha_disponibilidad": "15/10/2023",
+    "hora_disponibilidad": "11:00 AM- 01:00 PM"
+})
+
+db.laboradores.insertOne({ 
+    "nombre": "Isabel Rojas", 
+    "documento": "98234567", 
+    "especialidad": "Neurólogo", 
+    "fecha_disponibilidad": "16/10/2023",
+    "hora_disponibilidad": "1:00 AM- 3:00 PM"
+})  
+
+db.laboradores.insertOne({ 
+    "nombre": "Miguel González", 
+    "documento": "12345678", 
+    "especialidad": "Cirujano Plástico", 
+    "fecha_disponibilidad": "17/10/2023",
+    "hora_disponibilidad": "1:00 AM- 3:00 PM"
+})
+    
+db.laboradores.insertOne({ 
+    "nombre": "Cecilia Pérez", 
+    "documento": "56473829", 
+    "especialidad": "Dentista", 
+    "fecha_disponibilidad": "19/10/2023",
+    "hora_disponibilidad": "1:00 AM- 3:00 PM"
+})
+
+db.laboradores.insertOne({ 
+    "nombre": "Antonio López", 
+    "documento": "87654321", 
+    "especialidad": "Enfermero",
+    "fecha_disponibilidad": "20/10/2023",
+    "hora_disponibilidad": "1:00 AM- 3:00 PM"
+})
+
+db.laboradores.insertOne({ 
+    "nombre": "Verónica Martínez", 
+    "documento": "23456789", 
+    "especialidad": "Fisioterapeuta",
+    "fecha_disponibilidad": "21/10/2023",
+    "hora_disponibilidad": "1:00 AM- 3:00 PM"
+})
+
+db.laboradores.insertOne({ 
+    "nombre": "Luisa Sánchez", 
+    "documento": "67483920", 
+    "especialidad": "Nutricionista", 
+    "fecha_disponibilidad": "22/10/2023",
+    "hora_disponibilidad": "1:00 AM- 3:00 PM"
+})
+
+db.laboradores.insertOne({ 
+    "nombre": "Raúl Gómez", 
+    "documento": "19384756", 
+    "especialidad": "Cardiólogo", 
+    "fecha_disponibilidad": "23/10/2023",
+    "hora_disponibilidad": "3:00 AM- 5:00 PM"
+})
+
+db.laboradores.insertOne({ 
+    "nombre": "Lucía Torres", 
+    "documento": "28374659", 
+    "especialidad": "Ginecóloga", 
+    "fecha_disponibilidad": "24/10/2023",
+    "hora_disponibilidad": "3:00 AM- 5:00 PM"
+})
+
+db.laboradores.insertOne({ 
+    "nombre": "Andrés Díaz", 
+    "documento": "73849562", 
+    "especialidad": "Dermatólogo",
+    "fecha_disponibilidad": "25/10/2023",
+    "hora_disponibilidad": "3:00 AM- 5:00 PM"
+})
+
+db.laboradores.insertOne({ 
+    "nombre": "Elena Ramírez", 
+    "documento": "64537281", 
+    "especialidad": "Oftalmóloga",
+    "fecha_disponibilidad": "26/10/2023",
+    "hora_disponibilidad": "3:00 AM- 5:00 PM"
+})
+
+
+
+
+
+db.citas.insertOne({
+    "fecha": "01/10/2023",
+    "hora": "6:30 AM",
+    "nombre_del_especialista": "Juan Perez",
+    "numero_de_consultorio": "101",
+    "Nombre_de_paciente": "Daniel Herrera"
+}
+)
+
+db.citas.insertOne({
+    "fecha": "02/10/2023",
+    "hora": "6:40 AM",
+    "nombre_del_especialista": "Maria Garcia",
+    "numero_de_consultorio": "102",
+    "Nombre_de_paciente": "Gabriela Rodriguez"
+}
+)
+
+
+db.citas.insertOne({
+    "fecha": "03/10/2023",
+    "hora": "6:30 AM",
+    "nombre_del_especialista": "Carlos Rodriguez",
+    "numero_de_consultorio": "103",
+    "Nombre_de_paciente": "Mario Martinez"
+}
+)
+
+db.citas.insertOne({
+    "fecha": "04/10/2023",
+    "hora": "6:40 AM",
+    "nombre_del_especialista": "Ana Lopez",
+    "numero_de_consultorio": "104",
+    "Nombre_de_paciente": "Laura Fernandez"
+}
+)
+
+db.citas.insertOne({
+    "fecha": "05/10/2023",
+    "hora": "6:45 AM",
+    "nombre_del_especialista": "Luis Martinez",
+    "numero_de_consultorio": "105",
+    "Nombre_de_paciente": "Carolina Perez"
+})
+
+db.citas.insertOne({
+    "fecha": "06/10/2023",
+    "hora": "6:50 AM",
+    "nombre_del_especialista": "Laura Sanchez",
+    "numero_de_consultorio": "105",
+    "Nombre_de_paciente": "Luis Gonzalez"
+})
+
+db.citas.insertOne({
+    "fecha": "07/10/2023",
+    "hora": "6:55 AM",
+    "nombre_del_especialista": "Pedro Gomez",
+    "numero_de_consultorio": "201",
+    "Nombre_de_paciente": "Ana Maria Torres"
+})
+
+db.citas.insertOne({
+    "fecha": "08/10/2023",
+    "hora": "7:00 AM",
+    "nombre_del_especialista": "Sofia Torres",
+    "numero_de_consultorio": "202",
+    "Nombre_de_paciente": "Javier Lopez"
+})
+
+db.citas.insertOne({
+    "fecha": "09/10/2023",
+    "hora": "7:05 AM",
+    "nombre_del_especialista": "Jorge Vargas",
+    "numero_de_consultorio": "203",
+    "Nombre_de_paciente": "Valentina Ramirez"
+})
+
+db.citas.insertOne({
+    "fecha": "10/10/2023",
+    "hora": "7:10 AM",
+    "nombre_del_especialista": "Silvia Diaz",
+    "numero_de_consultorio": "204",
+    "Nombre_de_paciente": "Diego Catro"
+})
+
+db.citas.insertOne({
+    "fecha": "11/10/2023",
+    "hora": "7:15 AM",
+    "nombre_del_especialista": "Eduardo Ramirez",
+    "numero_de_consultorio": "205",
+    "Nombre_de_paciente": "Camila Ruiz"
+})
+
+db.citas.insertOne({
+    "fecha": "12/10/2023",
+    "hora": "7:20 AM",
+    "nombre_del_especialista": "Carmen Mendoza",
+    "numero_de_consultorio": "301",
+    "Nombre_de_paciente": "Ricardo Mendoza"
+})
+
+db.citas.insertOne({
+    "fecha": "13/10/2023",
+    "hora": "7:25 AM",
+    "nombre_del_especialista": "Hector Castillo",
+    "numero_de_consultorio": "302",
+    "Nombre_de_paciente": "Paula Diaz"
+})
+
+db.citas.insertOne({
+    "fecha": "14/10/2023",
+    "hora": "7:30 AM",
+    "nombre_del_especialista": "Patricia Fernández",
+    "numero_de_consultorio": "303",
+    "Nombre_de_paciente": "Sebastian Ramos"
+})
+
+db.citas.insertOne({
+    "fecha": "15/10/2023",
+    "hora": "7:35 AM",
+    "nombre_del_especialista": "Ricardo Silva",
+    "numero_de_consultorio": "304",
+    "Nombre_de_paciente": "Isabel Gonzalez"
+})
+
+db.citas.insertOne({
+    "fecha": "16/10/2023",
+    "hora": "7:40 AM",
+    "nombre_del_especialista": "Isabel Rojas",
+    "numero_de_consultorio": "305",
+    "Nombre_de_paciente": "Juan Carlos Lopez"
+})
+
+db.citas.insertOne({
+    "fecha": "17/10/2023",
+    "hora": "7:45 AM",
+    "nombre_del_especialista": "Miguez Gonzalez",
+    "numero_de_consultorio": "401",
+    "Nombre_de_paciente": "Victoria Silva"
+})
+
+db.citas.insertOne({
+    "fecha": "18/10/2023",
+    "hora": "7:50 AM",
+    "nombre_del_especialista": "Cecilia Perez",
+    "numero_de_consultorio": "402",
+    "Nombre_de_paciente": "Eduardo Perez"
+})
+
+db.citas.insertOne({
+    "fecha": "19/10/2023",
+    "hora": "7:55 AM",
+    "nombre_del_especialista": "Antonio Lopez",
+    "numero_de_consultorio": "403",
+    "Nombre_de_paciente": "Daniel Rojas"
+})
+
+db.citas.insertOne({
+    "fecha": "20/10/2023",
+    "hora": "8:00 AM",
+    "nombre_del_especialista": "Veronica Martinez",
+    "numero_de_consultorio": "404",
+    "Nombre_de_paciente": "Sofia Ortiz"
+})
+
+db.citas.insertOne({
+    "fecha": "21/10/2023",
+    "hora": "8:05 AM",
+    "nombre_del_especialista": "Luisa Sanchez",
+    "numero_de_consultorio": "405",
+    "Nombre_de_paciente": "Felipe Rojas"
+})
+
+db.citas.insertOne({
+    "fecha": "22/10/2023",
+    "hora": "8:10 AM",
+    "nombre_del_especialista": "Raul Gomez",
+    "numero_de_consultorio": "501",
+    "Nombre_de_paciente": "Valeria Gonzalez"
+})
+
+db.citas.insertOne({
+    "fecha": "23/10/2023",
+    "hora": "8:15 AM",
+    "nombre_del_especialista": "Lucia Torres",
+    "numero_de_consultorio": "502",
+    "Nombre_de_paciente": "Guillermo Morales"
+})
+
+db.citas.insertOne({
+    "fecha": "24/10/2023",
+    "hora": "8:20 AM",
+    "nombre_del_especialista": "Andres Diaz",
+    "numero_de_consultorio": "503",
+    "Nombre_de_paciente": "Alejandro Cruz"
+})
+
+db.citas.insertOne({
+    "fecha": "25/10/2023",
+    "hora": "8:25 AM",
+    "nombre_del_especialista": "Helena Ramirez",
+    "numero_de_consultorio": "504",
+    "Nombre_de_paciente": "Adriana Jimenez"
+})
+
+
+
+
+
+db.medicamentos.insertOne({
+    "nombre_de_medicamentos": "Aspirina",
+    "nombre_del_paciente": "Daniela Herrera",
+    "fecha_de_vencimiento": "01/02/2025"
+})
+
+db.medicamentos.insertOne({
+    "nombre_de_medicamentos": "Ibuprofeno",
+    "nombre_del_paciente": "Gabriela Rodriguez",
+    "fecha_de_vencimiento": "02/02/2025"
+})
+
+db.medicamentos.insertOne({
+    "nombre_de_medicamentos": "Parasetamol",
+    "nombre_del_paciente": "Mario Martinez",
+    "fecha_de_vencimiento": "03/02/2025"
+})
+
+db.medicamentos.insertOne({
+    "nombre_de_medicamentos": "omeprazol",
+    "nombre_del_paciente": "Laura Fernandez",
+    "fecha_de_vencimiento": "04/02/2025"
+})
+
+db.medicamentos.insertOne({
+    "nombre_de_medicamentos": "Silvastatina",
+    "nombre_del_paciente": "Andres Sanchez",
+    "fecha_de_vencimiento": "05/02/2025"
+})
+
+db.medicamentos.insertOne({
+    "nombre_de_medicamentos": "Amoxicilna",
+    "nombre_del_paciente": "Carolina Perez",
+    "fecha_de_vencimiento": "06/02/2025"
+})
+
+db.medicamentos.insertOne({
+    "nombre_de_medicamentos": "Atorvastatina",
+    "nombre_del_paciente": "Luis Gonzalez",
+    "fecha_de_vencimiento": "07/02/2025"
+})
+
+db.medicamentos.insertOne({
+    "nombre_de_medicamentos": "Metformina",
+    "nombre_del_paciente": "Ana Maria Torres",
+    "fecha_de_vencimiento": "08/02/2025"
+})
+
+db.medicamentos.insertOne({
+    "nombre_de_medicamentos": "Ciproflaxina",
+    "nombre_del_paciente": "Javier Lopez",
+    "fecha_de_vencimiento": "09/02/2025"
+})
+
+db.medicamentos.insertOne({
+    "nombre_de_medicamentos": "Licilopril",
+    "nombre_del_paciente": "Valentina Ramirez",
+    "fecha_de_vencimiento": "10/02/2025"
+})
+
+db.medicamentos.insertOne({
+    "nombre_de_medicamentos": "losartan",
+    "nombre_del_paciente": "Diedo Castro",
+    "fecha_de_vencimiento": "11/02/2025"
+})
+
+db.medicamentos.insertOne({
+    "nombre_de_medicamentos": "Gabapetina",
+    "nombre_del_paciente": "Camila Ruiz",
+    "fecha_de_vencimiento": "12/02/2025"
+})
+
+db.medicamentos.insertOne({
+    "nombre_de_medicamentos": "Pantoprazol",
+    "nombre_del_paciente": "Ricardo Mendoza",
+    "fecha_de_vencimiento": "22/02/2025"
+})
+
+db.medicamentos.insertOne({
+    "nombre_de_medicamentos": "Tramadol",
+    "nombre_del_paciente": "Paula Diaz",
+    "fecha_de_vencimiento": "14/02/2025"
+})
+
+db.medicamentos.insertOne({
+    "nombre_de_medicamentos": "Fluozetina",
+    "nombre_del_paciente": "Sebastian Ramos",
+    "fecha_de_vencimiento": "15/02/2025"
+})
+
+db.medicamentos.insertOne({
+    "nombre_de_medicamentos": "sertralina",
+    "nombre_del_paciente": "Isabel Gonzalez",
+    "fecha_de_vencimiento": "16/02/2025"
+})
+
+db.medicamentos.insertOne({
+    "nombre_de_medicamentos": "wuarfarina",
+    "nombre_del_paciente": "Juan Carlos Lopez",
+    "fecha_de_vencimiento": "17/02/2025"
+})
+
+db.medicamentos.insertOne({
+    "nombre_de_medicamentos": "Lorazepam",
+    "nombre_del_paciente": "Victoria Silva",
+    "fecha_de_vencimiento": "22/02/2025"
+})
+
+db.medicamentos.insertOne({
+    "nombre_de_medicamentos": "Metroprolol",
+    "nombre_del_paciente": "Eduardo Perez",
+    "fecha_de_vencimiento": "19/02/2025"
+})
+
+db.medicamentos.insertOne({
+    "nombre_de_medicamentos": "Dexametazona",
+    "nombre_del_paciente": "Adriana Jimenez",
+    "fecha_de_vencimiento": "20/02/2025"
+})
+
+db.medicamentos.insertOne({
+    "nombre_de_medicamentos": "Forocemida",
+    "nombre_del_paciente": "Alejandro Cruz",
+    "fecha_de_vencimiento": "21/02/2025"
+})
+
+db.medicamentos.insertOne({
+    "nombre_de_medicamentos": "Risperidona",
+    "nombre_del_paciente": "Sofia Ortiz",
+    "fecha_de_vencimiento": "22/02/2025"
+})
+
+db.medicamentos.insertOne({
+    "nombre_de_medicamentos": "Clonacepan",
+    "nombre_del_paciente": "Felipe Rojas",
+    "fecha_de_vencimiento": "23/02/2025"
+})
+
+db.medicamentos.insertOne({
+    "nombre_de_medicamentos": "Acetaminofen",
+    "nombre_del_paciente": "Valeria Gonzalez",
+    "fecha_de_vencimiento": "24/02/2025"
+})
+
+db.medicamentos.insertOne({
+    "nombre_de_medicamentos": "Levotiroxina",
+    "nombre_del_paciente": "Guillermo Morales",
+    "fecha_de_vencimiento": "25/02/2025"
+})
+
+
+
+
+
+
+
+
+db.autorizaciones.insertOne({
+    "codigo": "3424234213",
+    "nombre_de_paciente": "Daniel Herrrera",
+    "documento": "3445354",
+    "nombre_de_especialista": "Juan Perez",
+    "especialidad": "Medico General"
+})
+
+db.autorizaciones.insertOne({
+    "codigo": "56456543523",
+    "nombre_de_paciente": "Gabriela Rodriguez",
+    "documento": "234254234",
+    "nombre_de_especialista": "Maria Garcia",
+    "especialidad": "Enfermera"
+})
+
+db.autorizaciones.insertOne({
+    "codigo": "2342343434",
+    "nombre_de_paciente": "Mario Martinez",
+    "documento": "24234234",
+    "nombre_de_especialista": "Carlos Rodriguez",
+    "especialidad": "Odontólogo"
+})
+
+db.autorizaciones.insertOne({
+    "codigo": "124234234",
+    "nombre_de_paciente": "Laura Fernandez",
+    "documento": "32424255",
+    "nombre_de_especialista": "Ana Lopez",
+    "especialidad": "Psicóloga"
+})
+
+db.autorizaciones.insertOne({
+    "codigo": "32434535",
+    "nombre_de_paciente": "Andres Sanchez",
+    "documento": "234352345",
+    "nombre_de_especialista": "Luis Martinez",
+    "especialidad": "Fisicoterapeuta"
+})
+
+db.autorizaciones.insertOne({
+    "codigo": "28372942434",
+    "nombre_de_paciente": "Carolina Perez",
+    "documento": "34234452",
+    "nombre_de_especialista": "Laura Sanchez",
+    "especialidad": "Nutricionista"
+})
+
+db.autorizaciones.insertOne({
+    "codigo": "2342523452",
+    "nombre_de_paciente": "Luis Gonzalez",
+    "documento": "2343535",
+    "nombre_de_especialista": "Pedro Gomez",
+    "especialidad": "Cirujano"
+})
+
+db.autorizaciones.insertOne({
+    "codigo": "3234345345",
+    "nombre_de_paciente": "Ana Maria Torres",
+    "documento": "123254345",
+    "nombre_de_especialista": "Sofia Torres",
+    "especialidad": "Cardiologa"
+})
+
+db.autorizaciones.insertOne({
+    "codigo": "983792834",
+    "nombre_de_paciente": "Javier Lopez",
+    "documento": "23435564576",
+    "nombre_de_especialista": "Jorge Vargas",
+    "especialidad": "Ginecólogo"
+})
+
+db.autorizaciones.insertOne({
+    "codigo": "394702342",
+    "nombre_de_paciente": "Valentina Ramirez",
+    "documento": "30984204",
+    "nombre_de_especialista": "Silvia Diaz",
+    "especialidad": "Dermatólogo"
+})
+
+db.autorizaciones.insertOne({
+    "codigo": "8398346982",
+    "nombre_de_paciente": "Diego Castro",
+    "documento": "34737503",
+    "nombre_de_especialista": "Eduardo Ramirez",
+    "especialidad": "Oftalmóloga"
+})
+
+db.autorizaciones.insertOne({
+    "codigo": "389749283472",
+    "nombre_de_paciente": "Camila Ruiz",
+    "documento": "394e324702934",
+    "nombre_de_especialista": "Carmen Mendoza",
+    "especialidad": "Psiquiatra"
+})
+
+db.autorizaciones.insertOne({
+    "codigo": "34923472389",
+    "nombre_de_paciente": "Ricardo Mendoza",
+    "documento": "23472304",
+    "nombre_de_especialista": "Hector Castillo",
+    "especialidad": "Ortopedista"
+})
+
+db.autorizaciones.insertOne({
+    "codigo": "34792347",
+    "nombre_de_paciente": "Paula Diaz",
+    "documento": "0937093274",
+    "nombre_de_especialista": "Patricia Fernandez",
+    "especialidad": "Urología"
+})
+
+db.autorizaciones.insertOne({
+    "codigo": "20937027304",
+    "nombre_de_paciente": "Sebastian Ramos",
+    "documento": "0239402743",
+    "nombre_de_especialista": "Ricardo Silva",
+    "especialidad": "Pediatra"
+})
+
+db.autorizaciones.insertOne({
+    "codigo": "39470234",
+    "nombre_de_paciente": "Isabel Gonzalez",
+    "documento": "9834798234",
+    "nombre_de_especialista": "Isabela Rojas",
+    "especialidad": "Neurólogo"
+})
+
+db.autorizaciones.insertOne({
+    "codigo": "039402374",
+    "nombre_de_paciente": "Juan Carlos Lopez",
+    "documento": "29384023",
+    "nombre_de_especialista": "Miguel Gonzalez",
+    "especialidad": "Cirujano Plastico"
+})
+
+db.autorizaciones.insertOne({
+    "codigo": "3298792384",
+    "nombre_de_paciente": "Victoria Silva",
+    "documento": "03892342",
+    "nombre_de_especialista": "Cecilia Perez",
+    "especialidad": "Dentista"
+})
+
+db.autorizaciones.insertOne({
+    "codigo": "0324720403",
+    "nombre_de_paciente": "Eduardo Perez",
+    "documento": "298379732",
+    "nombre_de_especialista": "Antonio Lopez",
+    "especialidad": "Enfermero"
+})
+
+db.autorizaciones.insertOne({
+    "codigo": "9037924832",
+    "nombre_de_paciente": "Adriana Jimenez",
+    "documento": "938930242",
+    "nombre_de_especialista": "Veronica Martinez",
+    "especialidad": "Fisioterapeuta"
+})
+
+db.autorizaciones.insertOne({
+    "codigo": "39470242",
+    "nombre_de_paciente": "Alejandro Cruz",
+    "documento": "092830234",
+    "nombre_de_especialista": "Luisa Sanchez",
+    "especialidad": "Nutricionista"
+})
+
+db.autorizaciones.insertOne({
+    "codigo": "2394820934",
+    "nombre_de_paciente": "Sofia Ortiz",
+    "documento": "3048204",
+    "nombre_de_especialista": "Luisa Torres",
+    "especialidad": "Ginecóloga"
+})
+
+db.autorizaciones.insertOne({
+    "codigo": "32470234",
+    "nombre_de_paciente": "Flipe Rojas",
+    "documento": "0972034",
+    "nombre_de_especialista": "Raul Gomez",
+    "especialidad": "Cardiologo"
+})
+
+db.autorizaciones.insertOne({
+    "codigo": "30940243",
+    "nombre_de_paciente": "Valeria Gonzalez",
+    "documento": "203940234",
+    "nombre_de_especialista": "Andres Diaz",
+    "especialidad": "Dermatologo"
+})
+
+db.autorizaciones.insertOne({
+    "codigo": "23987498234",
+    "nombre_de_paciente": "Guillermo Morales",
+    "documento": "328470234",
+    "nombre_de_especialista": "Elena Ramirez",
+    "especialidad": "Oftalmóloga"
+})

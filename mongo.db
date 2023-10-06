@@ -3,3 +3,44 @@ db.Usuarios.insertOne({
     "Email": "tatianaangarita150@gmail.com",
     "Edad": 19
 })
+
+
+
+
+
+
+db.laboradores.find(
+    {
+        especialidad: 'Oftalmólogo'
+    }
+)
+
+
+db.citas.find(
+    {
+        fecha: '02/10/2023',
+        nombre_del_especialista: 'Maria Garcia'
+    }
+)
+
+
+db.autorizaciones.find(
+    {
+        especialidad: 'Ginecólogo'
+    }
+)
+
+
+db.medicamentos.find(
+    {
+        fecha_de_vencimiento: '22/02/2025'
+    }
+)
+
+
+db.laboradores.find(
+    {
+        fecha_disponibilidad: '15/10/2023',
+        hora_disponibilidad: '11:00 AM- 01:00 PM'
+    }
+)
