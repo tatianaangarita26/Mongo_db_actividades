@@ -1,0 +1,39 @@
+.container2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 350px;
+    padding-top: 50px;
+    flex-direction: column;
+}
+
+h1{
+    color: rgb(170, 0, 255);
+    font-weight: 800;
+    font-size: 40px;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+}
+
+img{
+    padding-left: 160px;
+    width: 500px;
+    height: 350px;
+}
+
+.boton{
+    color: rgb(136, 31, 235);
+    background-color: rgb(227, 196, 255);
+    padding: 10px 15px 10px;
+    border-radius: 20px ;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
